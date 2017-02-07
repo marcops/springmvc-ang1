@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <title>Demo page</title>
+    <script src="js/angular-min.js"></script>
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+</head>
+<body ng-app="DemoApp" ng-controller="HomeController">
+
+<h2>Authenticated Page</h2>
+<table>
+	<tr>
+		<td>
+			<form action="/greeting" method="post" >
+				<input type="submit" value="greeting"/>
+			</form>
+		</td>
+		<td>
+			<form action="/logout" method="post" >
+				<input type="submit" value="Logout"/>
+			</form>
+		</td>
+	</tr>
+</table>
+
+</body>
+</html>
+
